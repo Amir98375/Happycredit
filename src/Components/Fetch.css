@@ -10,7 +10,7 @@ body{
     width: 100%;
     gap: 5px;
     grid-template-columns: repeat(4,1fr);
-    border: 1px solid grey;
+ 
    
   
 
@@ -20,6 +20,7 @@ body{
     align-items: center;
 
 }
+
 .paginate{
     text-align: center;
     font-size: 25px;
@@ -30,7 +31,53 @@ body{
     height: 250px;
 }
 
+@media only screen and (max-width: 1400px){
+    .prod{
+        display: grid;
+    width: 100%;
+    gap: 5px;
+    grid-template-columns: repeat(3,1fr);
+    background-color: blanchedalmond;
+    }
+    }
 
+    @media only screen and (max-width: 1200px){
+        .prod{
+            display: grid;
+        width: 100%;
+        gap: 5px;
+        grid-template-columns: repeat(3,1fr);
+        background-color: skyblue;
+        }
+        }
+
+        @media only screen and (max-width: 800px){
+            .prod{
+                display: grid;
+            width: 100%;
+            gap: 5px;
+            grid-template-columns: repeat(2,1fr);
+            background-color:black;
+            }
+            .sametext{
+                color: white;
+            }
+            
+            }
+
+            @media only screen and (max-width: 500px){
+                .prod{
+                    display: grid;
+                width: 100%;
+                gap: 5px;
+                grid-template-columns: repeat(1,1fr);
+                background-color:black;
+                }
+                .sametext{
+                    color: white;
+                }
+                
+                }
 
 
 

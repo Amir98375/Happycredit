@@ -13,7 +13,8 @@ import {
     Input,
    
   } from '@chakra-ui/react';
-
+//chakra ui is used for card 
+//complete responsive design built by media queries
 export const FetchData = () => {
     const [item,setItem]=useState([]);
     const [page,setpage]=useState(1)
@@ -24,17 +25,19 @@ export const FetchData = () => {
     const [search,setsearch]=useState('')
 //get all data with pagination 12 itmes will show on ui after first render after
 //clicking on show more button 12 will add to exsting tweleve and so on
+//show more button will be visible initialy after getting page 2 data show less button will be visible 
 useEffect(()=>{
   searchdata.length>=3?setsearch(searchdata):setsearch('')
   console.log(search,"hellosearch")
 },[searchdata])
+
+//serching is depend on query parameters and api call will make after 3char no need to press the button
+//button will active after 3 char enter but that for demonstration
 console.log("this",search)
    useEffect(()=>{
     GetData(limit,search)
    },[limit,search])
-    const handleSearch=(limit,searchdata)=>{
-            GetData(limit,searchdata)
-    }
+   
     const GetData=(limit,search)=>{
       // console.log("hello",search)
       axios.get(`https://jsonplaceholder.typicode.com/posts`,{
@@ -50,15 +53,16 @@ console.log("this",search)
     const handlepage=()=>{
       if(page>=1){
        setpage(page+1)
-       setlimit(limit+5)
+       setlimit(limit+12)
       }
    }
    const showless=()=>{
            if(page>1){
              setpage(page-1)
-             setlimit(limit-5)
+             setlimit(limit-12)
            }
    }
+//the function to show the alert data in alert box
 
 const handle=(i)=>{
   console.log(i)
@@ -107,10 +111,10 @@ axios.get(`https://jsonplaceholder.typicode.com/users/${i}`)
           
           <Stack pt={10} align={'center'} className="st" >
          
-            <Heading fontSize={'2xl'} fontFamily={'body'} fontWeight={500}>
+            <Heading className='sametext' fontSize={'2xl'} fontFamily={'body'} fontWeight={500}>
               {e.title}
             </Heading>
-            <Text color={'gray.500'} fontSize={'sm'} textTransform={'uppercase'}>
+            <Text className='sametext'  fontSize={'sm'} textTransform={'uppercase'}>
            {e.body}
             </Text>
             </Stack>
@@ -122,8 +126,7 @@ axios.get(`https://jsonplaceholder.typicode.com/users/${i}`)
     )
   })}
   </Box> 
-
-
+ 
 <Button bg={"teal"} ml={"38em"} mt={"20px"} onClick={handlepage} disabled={page==lastpage}>Show more</Button>
 {page>1?<Button bg={"teal.600"} onClick={showless} mt={"20px"}>show less</Button>:null}
 
