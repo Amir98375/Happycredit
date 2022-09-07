@@ -1,0 +1,38 @@
+body{
+    margin:0;
+    padding:0;
+   
+    
+}
+
+.prod{
+    display: grid;
+    width: 100%;
+    gap: 5px;
+    grid-template-columns: repeat(4,1fr);
+    border: 1px solid grey;
+   
+  
+
+}
+.inner{
+  border: 1px solid blue;
+    align-items: center;
+
+}
+.paginate{
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+.st{
+    width: 100%;
+    height: 250px;
+}
+
+
+
+
+
+
+
