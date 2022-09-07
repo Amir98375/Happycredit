@@ -97,9 +97,7 @@ axios.get(`https://jsonplaceholder.typicode.com/users/${i}`)
     placeholder='enter something to search' bg={"black"} width={"25%"} type="text"
     color={"whiteAlpha.900"}
     onChange={(e)=>setsearchdata(e.target.value)}/>
-    <Button backgroundColor={"black"} color={"white"} 
-    disabled={searchdata.length<=2}
-    onClick={()=>handleSearch(limit,searchdata)}>Search data</Button> 
+    
    </Box>
    <Box className="prod"   >
   
