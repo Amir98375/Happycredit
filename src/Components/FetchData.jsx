@@ -92,10 +92,8 @@ axios.get(`https://jsonplaceholder.typicode.com/users/${i}`)
   return (
    
    <Box className='main'> 
-   <Box margin={"auto"}>
-   <Input margin={"auto"} height="50px" 
-    placeholder='enter something to search' bg={"black"} width={"25%"} type="text"
-    color={"whiteAlpha.900"}
+   <Box display={"flex"} height={"100px"} width={"100%"} backgroundColor={"black"}>
+   <Input className={'inputTage'}  width={"25%"} placeholder='enter something to search'
     onChange={(e)=>setsearchdata(e.target.value)}/>
     
    </Box>

@@ -1,23 +1,26 @@
 body{
     margin:0;
     padding:0;
-   
+   background-color: grey;
     
 }
 
 .prod{
     display: grid;
     width: 100%;
-    gap: 5px;
-    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+    grid-template-columns: repeat(4,1fr);
+    background-color: white;
+    box-shadow: black;
  
-   
+    background-color: grey;
   
 
 }
 .inner{
-  border: 1px solid blue;
+border-radius: 20px;
     align-items: center;
+   background-color: white;
 
 }
 
@@ -30,14 +33,22 @@ body{
     width: 100%;
     height: 250px;
 }
+.inputTage{
+    margin:auto;
+     height:50%;
+    background-color:grey;
+    width: 25%;
+  color: white;
+}
 
-@media only screen and (max-width: 1400px){
+@media only screen and (max-width: 1300px){
     .prod{
         display: grid;
     width: 100%;
     gap: 5px;
     grid-template-columns: repeat(4,1fr);
-    background-color: blanchedalmond;
+    gap: 20px;
+   
     }
     }
 
@@ -45,7 +56,7 @@ body{
         .prod{
             display: grid;
         width: 100%;
-        gap: 5px;
+        gap: 20px;
         grid-template-columns: repeat(4,1fr);
         background-color: skyblue;
         }
@@ -57,12 +68,15 @@ body{
             width: 100%;
             gap: 5px;
             grid-template-columns: repeat(3,1fr);
-            background-color:black;
-            }
-            .sametext{
-                color: white;
-            }
+            background-color: white;
             
+            }
+           .inner{
+            background-color: teal;
+           }
+           .sametext{
+            color: black;
+        }
             }
 
             @media only screen and (max-width: 500px){
@@ -75,6 +89,9 @@ body{
                 }
                 .sametext{
                     color: white;
+                }
+                .inner{
+                    background-color: black;
                 }
                 
                 }
@@ -92,6 +109,7 @@ body{
                 }
                 
                 }
+            
 
 
 
