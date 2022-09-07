@@ -9,7 +9,7 @@ body{
     display: grid;
     width: 100%;
     gap: 5px;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(5,1fr);
  
    
   
@@ -36,7 +36,7 @@ body{
         display: grid;
     width: 100%;
     gap: 5px;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
     background-color: blanchedalmond;
     }
     }
@@ -46,7 +46,7 @@ body{
             display: grid;
         width: 100%;
         gap: 5px;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(4,1fr);
         background-color: skyblue;
         }
         }
@@ -56,7 +56,7 @@ body{
                 display: grid;
             width: 100%;
             gap: 5px;
-            grid-template-columns: repeat(2,1fr);
+            grid-template-columns: repeat(3,1fr);
             background-color:black;
             }
             .sametext{
@@ -66,6 +66,20 @@ body{
             }
 
             @media only screen and (max-width: 500px){
+                .prod{
+                    display: grid;
+                width: 100%;
+                gap: 5px;
+                grid-template-columns: repeat(2,1fr);
+                background-color:black;
+                }
+                .sametext{
+                    color: white;
+                }
+                
+                }
+                
+            @media only screen and (max-width: 3500px){
                 .prod{
                     display: grid;
                 width: 100%;
