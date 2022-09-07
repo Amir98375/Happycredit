@@ -79,7 +79,7 @@ body{
                 
                 }
                 
-            @media only screen and (max-width: 3500px){
+            @media only screen and (max-width: 350px){
                 .prod{
                     display: grid;
                 width: 100%;
